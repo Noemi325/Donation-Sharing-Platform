@@ -1,0 +1,25 @@
+/* style.css */
+
+/* 1. 自定義 Hero 區塊樣式 */
+.hero-section {
+    /* 使用背景圖，您需要替換為您自己的圖片網址 */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/1600/600') no-repeat center center;
+    background-size: cover; /* 確保圖片覆蓋整個區塊 */
+    padding: 8rem 0; /* 增加上下間距 */
+    text-align: center;
+    color: white; /* 讓文字變成白色，在深色背景上更清晰 */
+}
+
+.hero-section h1, .hero-section p {
+    color: white !important; /* 強制文字為白色 */
+}
+
+/* 2. 調整物品卡片樣式 */
+.card {
+    border: none; /* 移除預設邊框 */
+    transition: transform 0.2s; /* 加入滑鼠懸停動畫 */
+}
+.card:hover {
+    transform: translateY(-5px); /* 滑鼠懸停時上浮 */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
